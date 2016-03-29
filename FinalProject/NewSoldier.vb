@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class NewSoldier
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Load combobox with ranks.
         cboRank.Items.Add("PVT")
@@ -28,7 +28,7 @@
         ' Clear textboxes, clear CBO, reset radio buttons.
         cboRank.SelectedIndex = -1
         txtName.Text = ""
-        txtSSN.Text = ""
+        txtSsn.Text = ""
         txtAge.Text = ""
     End Sub
 
@@ -38,7 +38,7 @@
         Dim age As Integer
 
         ' Clear status label
-        lblStatus.text = ""
+        lblStatus.Text = ""
 
         ' Check if a rank has been selected.
         If cboRank.SelectedIndex = -1 Then
@@ -55,15 +55,17 @@
         End If
 
         ' Check if SSN has been correctly entered.
-        If Not Integer.TryParse(txtSSN.Text, ssnId) Then
+        If Not Integer.TryParse(txtSsn.Text, ssnId) Then
             lblStatus.Text = "Please enter the servicemember's last four (SSN)."
-            txtSSN.Focus()
+            txtSsn.Text = ""
+            txtSsn.Focus()
             Return
         End If
 
         ' Check if age has been entered.
         If Not Integer.TryParse(txtAge.Text, age) Then
             lblStatus.Text = "Please enter the servicemember's age."
+            txtAge.Text = ""
             txtAge.Focus()
             Return
         End If
