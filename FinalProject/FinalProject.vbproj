@@ -109,6 +109,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NewAPFT.Designer.vb">
+      <DependentUpon>NewAPFT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewAPFT.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="NewSoldier.Designer.vb">
       <DependentUpon>NewSoldier.vb</DependentUpon>
     </Compile>
@@ -131,6 +137,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAPFT.resx">
+      <DependentUpon>NewAPFT.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewSoldier.resx">
       <DependentUpon>NewSoldier.vb</DependentUpon>
