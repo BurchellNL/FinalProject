@@ -18,7 +18,7 @@
         lblStatus.Text = ""
 
         ' Check if a rank has been selected.
-        If cboSoldier.SelectedIndex = -1 Then
+        If cboSoldier.Text = "" Then
             lblStatus.Text = "Please a servicemember."
             cboSoldier.Focus()
             Return

@@ -1,8 +1,7 @@
 ﻿Public Class ModifySoldier
 
 
-    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnModify.Click
-        Dim ssnId As Integer
+    Private Sub btnModify_Click(sender As Object, e As EventArgs) Handles btnModify.Click
         Dim age As Integer
 
         ' Clear status label
@@ -86,8 +85,6 @@
             txtSsn.Text = "0003"
             cboRank.SelectedIndex = 5
             txtAge.Text = "23"
-
-
         End If
     End Sub
 End Class
