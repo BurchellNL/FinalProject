@@ -1,6 +1,7 @@
 ﻿Public Class NewSoldier
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Load combobox with ranks.
+        cboRank.Items.Clear()
         cboRank.Items.Add("PVT")
         cboRank.Items.Add("PV2")
         cboRank.Items.Add("PFC")

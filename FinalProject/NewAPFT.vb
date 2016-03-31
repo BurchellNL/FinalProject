@@ -1,6 +1,11 @@
 ﻿Public Class New_APFT
     Private Sub New_APFT_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'cboSoldier.DataSource = 
+        ' Fake it.
+        cboSoldier.Items.Clear()
+        cboSoldier.Items.Add("1LT Peterson")
+        cboSoldier.Items.Add("CDT Name")
+        cboSoldier.Items.Add("CDT Allen")
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
