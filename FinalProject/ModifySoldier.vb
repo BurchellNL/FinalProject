@@ -4,7 +4,7 @@
     Private Sub btnModify_Click(sender As Object, e As EventArgs) Handles btnModify.Click
         Dim age As Integer
 
-        ' Clear status label
+        ' Clear status label.
         lblStatus.Text = ""
 
         ' Check is a name has been entered.
