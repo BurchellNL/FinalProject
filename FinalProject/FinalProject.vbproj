@@ -87,6 +87,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="APFTDataBaseDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>APFTDataBaseDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="APFTList.Designer.vb">
       <DependentUpon>APFTList.vb</DependentUpon>
     </Compile>
@@ -167,6 +172,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="APFTDataBaseDataSet.xsc">
+      <DependentUpon>APFTDataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="APFTDataBaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>APFTDataBaseDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="APFTDataBaseDataSet.xss">
+      <DependentUpon>APFTDataBaseDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
